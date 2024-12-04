@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Real Madrid szurkolói oldal</title>
+    <meta name="author" content="Katona Zétény">
+    <meta name="copyright" content="Nem hivatalos oldal">
+    <meta name="description" content="A Real Madrid szurkolói oldala">
+    <link rel="apple-touch-icon" sizes="180x180" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Képek/logo.png">
+    <link rel="shortcut icon" href="Képek/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img class="logo" src="Képek/logo.png" alt="Real Madrid logo" id="logo_kep"></a>
+            <p class="motto">El mejor club del mundo</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a id="active" href="#">Kezdőlap</a></li>
+            <li><a href="masodik.html">Egykori legjobbjaink</a></li>
+            <li><a href="harmadik.html">Stadion</a></li>
+            <li><a href="negyedik.html">Jegyvásárlás</a></li>
+        </ul>
+        <hr id="menu_vonal">
+    </nav>
+    <div class="container">
+        <article class="mi">
+            <h2>Hogyan kezdődött?</h2>
+            <p>
+            2016. januárjában 8 barát összeült megnézni a spanyol élvonalbeli Real Madrid egyik mérkőzését, mit sem tudva arról,
+            hogy mekkora szeretet és rajongás rejtőzik mindenkiben ez a csapat iránt. Hétről-hétre megnéztük a meccseket és Tomi
+            barátom ötlete volt, hogy miért nem tesszük ezt hivatalossá, így létrehoztunk egy szurkolói egyletet. Célunk az lett,
+            hogy egyszerűvé tegyük egy mérkőzés megtekintését élőben a csapat többi szerelmesének is. 2018. februárja óta hivatalos
+            jegyértékesítők lettünk a Real Madrid hazai mérkőzéseire.
+            </p>
+        </article>
+        <div class="stock1">
+            <span class="caption">Vegye meg a jegyét <br>még ma.<br><span class="ticket"><a href="negyedik.html"
+                        id="jegyvasarlas">Jegyvásárlás</a></span></span>
+        </div>
+        <article class="welcome">
+            <h2>Legjobb szurkolói közösség a világon</h2>
+            <aside class="open">
+                <p>Közös meccsnézés:</p>
+                <p>Sorsolás alapján</p>
+            </aside>
+            <p>
+                A Real Madrid szurkolótábora a világ egyik legnagyobb és legszenvedélyesebb közössége, amelyet gyakran "Madridismo"-ként
+                emlegetnek. A klubot több mint 100 millió rajongó támogatja világszerte, ami a futball globális erejét tükrözi. A
+                Bernabéu-stadionban a szurkolók lenyűgöző atmoszférát teremtenek, különösen a nagyobb mérkőzéseken, ahol a híres "Hala
+                Madrid!" éneklés visszhangzik. A szurkolók között számos hivatalos szurkolói csoport működik, például az "Ultras Sur,"
+                akik különösen aktívak a lelátón. A rajongók büszkék a klub történelmi sikereire, például a rekordot jelentő Bajnokok
+                Ligája-győzelmekre, és hűségük generációkon átível, függetlenül a csapat aktuális formájától.
+            </p>
+        </article>
+        <figure id="vid">
+			<video src="Képek/video.mp4" autoplay controls>A böngésződ nem támogatja
+			</video>
+        </figure>
+        <div class="story" id="story">
+            <h2>Legjobb játékosok</h2>
+            <figure class="artist">
+                <figcaption>Vinicius Junior</figcaption>
+                <img src="Képek/Vinicius.jpg" alt="Vinicius Junior képe">
+            </figure>
+            <figure class="artist">
+                <figcaption>Jude Bellingham</figcaption>
+                <img src="Képek/Bellingham.jpg" alt="Jude Bellingham képe">
+            </figure>
+            <figure class="artist">
+                <figcaption>Thibaut Courtois</figcaption>
+                <img src="Képek/Courtois.jpg" alt="Thibaut Courtois képe">
+            </figure>
+            <figure class="artist">
+                <figcaption>Rodrygo Goes</figcaption>
+                <img src="Képek/Rodrygo.jpg" alt="Rodrygo Goes képe">
+            </figure>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <h1>Iratkozz fel hírlevelünkre és tájékozódj <br>a legfrisebb sorsolásokról!</h1>
+        <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="hirlevel" novalidate>
+            <input type="text" name="nev" placeholder="Név" class="hirlevel" id="hirlevel_nev">
+            <input type="email" name="email" placeholder="E-mail" class="hirlevel" id="hirlevel_email">
+            <p><label for="feltetelek">Elfogadom a feltételeket</label> <input type="checkbox" name="feltetelek"
+                    id="feltetelek"></p>
+            <input type="submit" value="Feliratkozás" class="feliratkozas" id="feliratkozas">
+        </form>
+        <h1>Kapcsolat</h1>
+        <p>Telefonszám: <br><a href="tel:+123456789">+123456789</a></p>
+        <p>E-mail: <br><a href="mailto:info@nexo.hu">realhun@madrid.hu</a></p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="Képek/facebook.png"
+                alt="Facebook logó"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="Képek/instagram.jpg"
+                alt="Instagram logó"></a>
+    </footer>
+</body>
+
+</HTML>

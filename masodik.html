@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Real Madrid Szurkoló oldal</title>
+    <meta name="author" content="Katona Zétény">
+    <meta name="copyright" content="Nem hivatalos oldal">
+    <meta name="description" content="A Real Madrid szurkolói oldala">
+    <link rel="apple-touch-icon" sizes="180x180" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Képek/logo.png">
+    <link rel="shortcut icon" href="Képek/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="Képek/logo.png" alt="Real Madrid logo"
+                    id="logo_kep"></a>
+            <p class="motto">El mejor club del mundo</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a id="active" href="#">Egykori legjobbjaink</a></li>
+            <li><a href="harmadik.html">Stadion</a></li>
+            <li><a href="negyedik.html">Jegyvásárlás</a></li>
+        </ul>
+        <hr id="menu_vonal">
+    </nav>
+    <div class="container">
+        <article class="event">
+			<h3>Puskás Ferenc</h3>
+            <aside class="event_img">
+                <img src="Képek/Puskas.jpg" alt="Puskás Ferenc képe">
+            </aside>
+            <aside class="event_desc">
+                <h2>"Száguldó őrnagy"</h2>
+                <p>Puskás Ferenc a Real Madrid legendás csatára volt, aki 1958 és 1966 között játszott a klubnál. Öt spanyol bajnoki címet
+                és három BEK-et nyert, emellett gólerős játékával világhírűvé vált.</p>
+            </aside>
+        </article>
+
+        <hr class="event_div">
+
+        <article class="event">
+			<h3>Cristiano Ronaldo</h3>
+            <aside class="event_img">
+                <img src="Képek/cristiano.jpg" alt="Cristiano Ronaldo képe">
+            </aside>
+            <aside class="event_desc">
+                <h2>"A portugál csoda"</h2>
+                <p>Cristiano Ronaldo a Real Madrid történetének egyik legnagyobb ikonja, 2009 és 2018 között játszott a klubnál. Négy
+                Bajnokok Ligáját nyert, és a klub gólrekordere lett, forradalmasítva a támadójátékot.</p>
+            </aside>
+        </article>
+
+        <hr class="event_div">
+
+        <article class="event">
+			<h3>Zinedine Zidane</h3>
+            <aside class="event_img">
+                <img src="Képek/zidane.jpg" alt="Zinedine Zidane képe">
+            </aside>
+            <aside class="event_desc">
+                <h2>"Zizou"</h2>
+                <p>
+                    Zinédine Zidane a Real Madrid ikonikus középpályása volt 2001 és 2006 között. Elegáns játékával BL-t és bajnoki címet
+                    nyert, később edzőként három egymást követő BL-győzelemre vezette a csapatot.</p>
+            </aside>
+        </article>
+        <hr class="event_div">
+
+    </div>
+    <footer id="footer">
+        <h1>Iratkozz fel hírlevelünkre és tájékozódj <br>a legfrisebb sorsolásokról!</h1>
+        <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="hirlevel" novalidate>
+            <input type="text" name="nev" placeholder="Név" class="hirlevel" id="hirlevel_nev">
+            <input type="email" name="email" placeholder="E-mail" class="hirlevel" id="hirlevel_email">
+            <p><label for="feltetelek">Elfogadom a feltételeket</label> <input type="checkbox" name="feltetelek"
+                    id="feltetelek"></p>
+            <input type="submit" value="Feliratkozás" class="feliratkozas" id="feliratkozas">
+        </form>
+        <h1>Kapcsolat</h1>
+        <p>Telefonszám: <br><a href="tel:+123456789">+123456789</a></p>
+        <p>E-mail: <br><a href="mailto:info@nexo.hu">realhun@madrid.hu</a></p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="Képek/facebook.png"
+                alt="Facebook logó"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="Képek/instagram.jpg"
+                alt="Instagram logó"></a>
+    </footer>
+</body>
+
+</HTML>

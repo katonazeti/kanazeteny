@@ -1,0 +1,517 @@
+/*====ĂltalĂĄnos====*/
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: purple;
+    color: whitesmoke;
+    font-family: 'Abril Fatface';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.galleria-container {
+    margin: auto;
+    flex-basis: 100%;
+    height: 80vh;
+}
+
+/*====MENĂ====*/
+
+nav {
+    min-height: 7.5vh;
+    margin-top: 1vh;
+    flex: 1 1 100%;
+    padding: 0.8vw;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 2vw;
+}
+
+nav li a {
+    color: whitesmoke;
+    border-radius: 2vw;
+    font-size: large;
+    padding: 0.8vh;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a#active {
+    background-color: #234281;
+    vertical-align: center;
+}
+
+nav li a:hover,
+#active:hover {
+    font-size: 120%;
+    background-color: rgb(181, 185, 193);
+    transition: 0.5s;
+}
+
+nav li {
+    max-height: 7vh;
+}
+
+#menu_vonal {
+    margin-top: 1.5vh;
+    background-color: whitesmoke;
+    height: 1vh;
+    border-radius: 1vw;
+    flex-basis: 90%;
+}
+
+/*====Tagek====*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: purple;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+article h3 {
+	display: block;
+	width:100%;
+	text-align: center;
+}
+
+video {
+		margin: 0;
+		padding: 0;
+        width: 80vw;
+        height: auto;
+        border-radius: 0.8vw;
+
+}
+
+footer h1 {
+    flex-basis: 100%;
+}
+
+footer p {
+    margin: 1vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Abril Fatface';
+}
+
+footer a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/*====OsztĂĄlyok ĂŠs azonosĂ­tĂłk====*/
+
+.stock1 {
+    min-height: 40vh;
+    flex-basis: 100%;
+    background-image: url("kepek/pexels-charles-parker-5847345_mobil.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.hirlevel {
+    height: 3vh;
+    margin: 0.5vw;
+    border: rgb(2, 32, 116) solid 1vw;
+    border-radius: 0.8vw;
+}
+
+
+.feliratkozas {
+    background-color: #4765a3;
+    color: whitesmoke;
+    border: solid whitesmoke 0.15vw;
+    border-radius: 0.3vw;
+    background-color: #4765a3;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+
+}
+
+.caption {
+    position: relative;
+    left: 18vw;
+    top: 12vh;
+    max-width: 100%;
+    text-align: left;
+    font-size: 5vh;
+}
+
+.event {
+    flex-basis: 100%;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+#vid {
+	margin: 0;
+	margin-top: 2vh;
+	padding: 0;
+}
+
+.event_img {
+    margin: 0;
+    max-width: 50vw;
+}
+
+.event_img img {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    border-radius: 1vw;
+    max-width: 44vw;
+}
+
+.event_img img:hover {
+    transform: rotate(-5deg) skew(2deg);
+    transition: 0.5s;
+}
+
+.artist img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.open:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.event_desc {
+    border-left: solid whitesmoke 0.3vw;
+    max-width: 50vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.event_div {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    flex-basis: 70%;
+    height: 0.5vh;
+    background-color: whitesmoke;
+    border-radius: 0.5vw;
+    border: 0;
+}
+
+.welcome {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 1vh;
+}
+
+.welcome p {
+    margin: 0;
+}
+
+.story {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    color: black;
+    justify-content: space-around;
+    border-radius: 1vw;
+    margin: 2vw;
+}
+
+.story h2 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 4.5vh;
+}
+
+.artist img {
+    max-width: 30vh;
+    border-radius: 1vw;
+}
+
+.artist {
+    text-align: center;
+}
+
+.open {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 0.3vw;
+    padding: 0.5vw;
+    border: solid whitesmoke 0.3vw;
+    border-style: groove;
+    border-radius: 0.3vw;
+    text-align: center;
+}
+
+.ticket a {
+    font-size: 2.5vh;
+    color: whitesmoke;
+    border-radius: 0.8vw;
+    padding: 0.8vw;
+    text-decoration: none;
+    background-color: #234281;
+}
+
+.ticket a:hover {
+    font-size: 3vh;
+    background-color: #4765a3;
+    transition: 0.5s;
+}
+
+#ticket_title {
+	text-align: center;
+}
+
+#jegy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.tetel {
+    margin: 1vw;
+    padding: 1vw 2vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5vw;
+    background-color: #234281;
+
+}
+
+.tetel p {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+}
+
+
+label.error {
+    color: #fb3a3a;
+}
+
+.buy,
+#kosarba {
+    background-color: #4765a3;
+    color: whitesmoke;
+    border: solid whitesmoke 0.15vw;
+    border-radius: 0.3vw;
+
+}
+
+.vasarlas {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+
+.osszeg,
+.szamol {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+
+.motto {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    height: 10vh;
+}
+
+
+.social {
+    height: 5vh;
+    margin-left: 3vw;
+}
+
+.story figcaption {
+    font-style: italic;
+    font-size: 4vh;
+}
+
+
+.mi {
+    margin: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+}
+
+.mi h2,
+p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.8vh;
+}
+
+#jegyek {
+    margin-left: 3vw;
+}
+
+#arak {
+    text-align: center;
+}
+
+#cim {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#allando_article {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#allando {
+    flex-basis: 100%;
+}
+
+#kosarba:hover {
+    background-color: rgb(181, 185, 193);
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: rgb(181, 185, 193);
+}
+
+@media all and (min-width: 600px) {
+
+    /*tablet*/
+    .open {
+        font-size: 2vh;
+    }
+
+    .event_img img {
+        max-width: 40vw;
+    }
+
+    #jegy {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /*szĂĄmĂ­tĂłgĂŠp*/
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stock1 {
+        position: relative;
+        min-height: 40vh;
+        width: 100%;
+        margin-left: 0.8vw;
+        margin-right: 0.8vw;
+        background-image: none;
+
+    }
+
+    .stock1::before {
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("Képek/hatterkep.avif");
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1vw;
+        opacity: 0.7;
+    }
+
+    .open {
+        float: right;
+    }
+
+    .hirlevel {
+        height: 4vh;
+        border: rgb(2, 32, 116) solid 0.2vw;
+        border-radius: 0.5vw;
+    }
+
+    .event_div {
+        flex-basis: 50%;
+    }
+
+    footer p {
+        margin: 1vw;
+    }
+
+    .stock1::before {
+        background-attachment: fixed;
+    }
+
+    #jegy {
+        flex-direction: row;
+    }
+
+    .event_img img {
+        max-width: 20vw;
+    }
+
+
+}

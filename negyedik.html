@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Real Madrid Szurkoló oldal</title>
+    <meta name="author" content="Katona Zétény">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="Nem hivatalos oldal">
+    <link rel="apple-touch-icon" sizes="180x180" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Képek/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Képek/logo.png">
+    <link rel="shortcut icon" href="Képek/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<body onload="getDate()">
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="Képek/logo.png" alt="Real Madrid logo"
+                    id="logo_kep"></a>
+            <p class="motto">El mejor club del mundo</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="masodik.html">Egykori legjobbjaink</a></li>
+            <li><a href="harmadik.html">Stadion</a></li>
+            <li><a id="active" href="#">Jegyvásárlás</a></li>
+        </ul>
+        <hr id="menu_vonal">
+    </nav>
+    <div class="container">
+        <article id="jegyek">
+            <h2 id="ticket_title">Jegyvásárlás a Santiago Bernabeu stadionba</h2>
+            <p>A mérkőzések időpontjairól tájékozódj a hírlevelünkben. Különböző szektorokba tudsz jegyet venni, így mindenki a saját
+            igényei szerint választhat. Stadion túra indul minden 2. órában, de hatalmas az igény, szóval vegye meg a jegyét még ma!</p>
+            <p id="arak">Árainkról az alábbi kalkulátor segítségével tudsz tájékozódni:<br>
+                
+        </article>
+        <form id="jegy" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" novalidate>
+            <datalist id="kiallitas">
+                <option value="Meccsjegy">
+                <option value="Meccsjegy stadion túrával">
+                <option value="Stadion túra">
+            </datalist>
+            <div class="tetel" id="tetel">
+                <p><label for="teljes_kiallitas">Jegytípus (Real Madrid-Getafe):</label><br>
+                    <input list="kiallitas" name="teljes_kiallitas" id="teljes_kiallitas">
+                </p>
+                <p><label for="teljes_datum">Dátum:</label><br>
+                    <input type="date" name="teljes_datum" id="teljes_datum">
+                </p>
+                <p><label for="teljes_idopont">Kb érkezni kívánt időpont:</label><br>
+                    <select name="teljes_idopont" size="1" id="teljes_idopont">
+                        <option>10:00</option>
+                        <option>13:00</option>
+                        <option>15:00</option>
+                        <option>18:00</option>
+                    </select>
+                </p>
+                <p><label for="teljes_noveles">Darabszám:</label><br>
+                    <input type="button" value="+" onclick="teljes_novel()" id="teljes_noveles">
+                    <input type="button" value="-" onclick="teljes_csokkent()">
+                </p>
+                <input name="teljes_darab" type="text" value="0" id="teljes">
+            </div>
+
+
+            <div class="tetel" id="diak_tetel">
+                <p><label for="diak_kiallitas">Jegytípus(Real Madrid-Atletico Madrid):</label><br>
+                    <input list="kiallitas" name="diak_kiallitas" id="diak_kiallitas">
+                </p>
+                <p><label for="diak_datum">Dátum:</label><br>
+                    <input type="date" name="diak_datum" id="diak_datum">
+                </p>
+                <p><label for="diak_idopont">Kb érkezni kívánt időpont:</label><br>
+                    <select name="diak_idopont" size="1" id="diak_idopont">
+                        <option>10:00</option>
+                        <option>13:00</option>
+                        <option>15:00</option>
+                        <option>18:00</option>
+                    </select>
+                </p>
+                <p><label for="diak_noveles">Darabszám:</label><br>
+                    <input type="button" value="+" onclick="diak_novel()" id="diak_noveles">
+                    <input type="button" value="-" onclick="diak_csokkent()">
+                </p>
+                <input name="diak_darab" type="text" value="0" id="diak">
+            </div>
+            <div class="tetel" id="csaladi_tetel">
+                <p><label for="csaladi_kiallitas">Jegytípus(Real Madrid-Barcelona):</label><br>
+                    <input list="kiallitas" name="csaladi_kiallitas" id="csaladi_kiallitas">
+                </p>
+                <p><label for="csaladi_datum">Dátum:</label><br>
+                    <input type="date" name="csaladi_datum" id="csaladi_datum">
+                </p>
+                <p><label for="csaladi_idopont">Kb érkezni kívánt időpont:</label><br>
+                    <select name="csaladi_idopont" size="1" id="csaladi_idopont">
+                        <option>10:00</option>
+                        <option>13:00</option>
+                        <option>15:00</option>
+                        <option>18:00</option>
+                    </select>
+                </p>
+                <p><label for="csaladi_noveles">Darabszám:</label><br>
+                    <input type="button" value="+" onclick="csaladi_novel()" id="csaladi_noveles">
+                    <input type="button" value="-" onclick="csaladi_csokkent()">
+                </p>
+                <input name="csaladi_darab" type="text" value="0" id="csaladi">
+            </div>
+            <div class="szamol"><input type="button" value="Kosárba" id="kosarba" onclick="kosar()"></div>
+            <div class="osszeg" id="osszesen">Összesen: 0 €</div>
+            <div class="vasarlas"><input class="buy" type="submit" value="Vásárlás" id="vasarlas"></div>
+        </form>
+    </div>
+    <footer id="footer">
+        <h1>Iratkozz fel hírlevelünkre és tájékozódj <br>a legfrisebb sorsolásokról!</h1>
+        <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="hirlevel" novalidate>
+            <input type="text" name="nev" placeholder="Név" class="hirlevel" id="hirlevel_nev">
+            <input type="email" name="email" placeholder="E-mail" class="hirlevel" id="hirlevel_email">
+            <p><label for="feltetelek">Elfogadom a feltételeket</label> <input type="checkbox" name="feltetelek"
+                    id="feltetelek"></p>
+            <input type="submit" value="Feliratkozás" class="feliratkozas" id="feliratkozas">
+        </form>
+        <h1>Kapcsolat</h1>
+        <p>Telefonszám: <br><a href="tel:+123456789">+123456789</a></p>
+        <p>E-mail: <br><a href="mailto:info@nexo.hu">realhun@madrid.hu</a></p>
+        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="Képek/facebook.png"
+                alt="Facebook logó"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="Képek/instagram.jpg"
+                alt="Instagram logó"></a>
+    </footer>
+</body>
+
+</HTML>
